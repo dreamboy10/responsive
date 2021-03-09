@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>responsive - layout003</title>
+  <style>
+    * {padding: 0; margin: 0;}
+    body {background: #fe4908;}
+    #wrap {width: 1200px; margin: 0 auto;}
+    header {width: 100%; height: 150px;  background: #c94b65;}
+    aside {float: left; width: 30%; height: 700px; background: #f94ed4;}
+    section {float: left; width: 70%; height: 700px; background: #b29400;}
+    footer {clear: both; width: 100%; height: 150px; background: #c8049d;}
+    
+    /* 화면 크기가 0 ~ 1200px */
+    @media (max-width: 1220px) {
+      #wrap {width: 95%;}
+    }
+    
+    /* 화면 크기가 0 ~ 768px */
+    @media (max-width: 768px) {
+      #wrap {width: 100%;}
+    }
+    
+    /* 화면 크기가 0 ~ 480px */
+    @media (max-width: 480px) {
+      #wrap {width: 100%;}
+      header {height: 300px;}
+      aside {float: none; width: 100%; height: 300px;}
+      section {float: none; width: 100%; height: 300px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header></header>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+  </div>
+</body>
+</html>

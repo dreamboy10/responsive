@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>responsive - layout002</title>
+  <style>
+    body {background: #fe904e; color: #2e49f0;}
+    h1::before {content: '1. ';}
+    h1::after {content: ' - 반응형 사이트 기본'}
+    
+    /* 화면 너비가 0 ~ 1280px일 때 (데스크탑,TV) */
+    @media (max-width: 1280px) {
+      body {background: #ff0000;}
+       h1::before {content: '2. ';}
+       h1::after {content: ' - 미디어 쿼리(1025px ~ 1280px)'}
+    }
+    
+     /* 화면 너비가 0 ~ 1024px일 때 (데스크탑) */
+    @media (max-width: 1024px) {
+      body {background: #cccccc;}
+       h1::before {content: '3. ';}
+       h1::after {content: ' - 미디어 쿼리(961px ~ 1024px)'}
+    }
+    
+     /* 화면 너비가 0 ~ 960px일 때 (노트북) */
+    @media (max-width: 960px) {
+      body {background: #848200;}
+       h1::before {content: '4. ';}
+       h1::after {content: ' - 미디어 쿼리(769px ~960px)'}
+    }
+    
+     /* 화면 너비가 0 ~ 768px일 때 (태블릿) */
+    @media (max-width: 768px) {
+      body {background: #339900;}
+       h1::before {content: '5. ';}
+       h1::after {content: ' - 미디어 쿼리(577px ~ 768px)'}
+    }
+    
+     /* 화면 너비가 0 ~ 576px일 때 (모바일) */
+    @media (max-width: 576px) {
+      body {background: #55eb47;}
+       h1::before {content: '6. ';}
+       h1::after {content: ' - 미디어 퀴리(0px ~ 576px)'}
+    }
+  </style>
+</head>
+<body>
+  <h1>반응형 사이트 만들기</h1>
+  <p>반응형 사이트를 만드는 방법 및 기술입니다.</p>
+  <p>반응형 사이트 강의 듣기</p>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+      <ul>
+        <li>JavaScript의 의미</li>
+        <li>Javascript의 역사</li>
+        <li>JavaScript의 문법</li>
+        <li>JavaScript의 동작원리</li>
+        <li>JavaScript의 라이브러리</li>
+        <li>JavaScript의 제어방법</li>
+      </ul>
+    <li>Jquery</li>
+    <li>PHP</li>
+    <li>Ajax</li>
+  </ul>
+</body>
+</html>

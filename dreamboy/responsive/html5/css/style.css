@@ -416,6 +416,14 @@ body {background: url("../img/header_bg.jpg")
 .square a:nth-child(10):hover img {filter: 
 	sepia(120%) hue-rotate(120deg);}
 
+/* 비디오 */
+/*.video {position: relative; width: 100%;
+	padding: 56.25%;}
+.video iframe {
+	position: absolute;
+	width: 100%; height: 100%;
+}*/
+
 /* 미디어 쿼리 */
 
 /* 화면 너비가 0 ~ 1220px */

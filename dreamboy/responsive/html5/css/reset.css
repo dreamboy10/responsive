@@ -23,8 +23,17 @@ dl,ul,li,ol,menu {list-style: none;}
 h1,h2,h3,h4,h5,h6 {font-size: 13px; color: #222222; 
 	font-weight: normal;}
 
+/* 버튼 초기화 */
+button {border: 0;}
+
 /* 반응형 이미지 */
 img {width: 100%;}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block;
+	content: ''; line-height: 0;}
+.clearfix:after {clear: both;}
 
 /* IR 효과 */
 
